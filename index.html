@@ -949,51 +949,595 @@
         }
 
         @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 40px 0 20px;
+            }
+
+            .app-logo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 15px;
+            }
+
             .header h1 {
                 font-size: 1.8rem;
             }
 
+            .header p {
+                font-size: 1.1rem;
+                margin-bottom: 20px;
+            }
+
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
             }
 
             .features {
                 grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .dashboard-container {
+                padding: 30px 20px;
+            }
+
+            .dashboard-title {
+                font-size: 1.8rem;
+            }
+
+            .license-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 25px;
+            }
+
+            .license-card {
+                padding: 30px 20px;
+                min-height: auto;
+            }
+
+            .hub-container {
+                padding: 30px 20px;
+            }
+
+            .hub-title {
+                font-size: 1.8rem;
+            }
+
+            .hub-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .hub-card {
+                padding: 25px 20px;
             }
 
             .quiz-header {
+                padding: 15px 20px;
                 flex-direction: column;
-                gap: 15px;
+                gap: 12px;
+                align-items: flex-start;
             }
 
-            .quiz-header .info {
-                flex-direction: column;
+            .quiz-header .progress-container {
                 width: 100%;
+                margin-right: 0;
             }
 
-            .quiz-header .badge-item {
+            .quiz-meta {
+                display: flex;
+                justify-content: space-between;
                 width: 100%;
-                justify-content: center;
+                align-items: center;
+            }
+
+            .question-section {
+                padding: 25px 20px;
+            }
+
+            .question-text {
+                font-size: 1.15rem;
+                margin-bottom: 20px;
+            }
+
+            .option {
+                padding: 15px 20px;
+            }
+
+            .option-letter {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+                margin-right: 15px;
+            }
+
+            .option-text {
+                font-size: 1rem;
+            }
+
+            .quiz-footer {
+                padding: 20px;
+            }
+
+            .nav-btn {
+                padding: 12px 24px;
+                font-size: 0.9rem;
             }
 
             .result-stats {
                 grid-template-columns: 1fr;
+                gap: 15px;
             }
 
             .result-actions {
                 flex-direction: column;
+                gap: 12px;
             }
 
-            .start-screen {
-                padding: 30px 20px;
-            }
-
-            .question-text {
-                font-size: 1.1rem;
+            .result-screen {
+                padding: 35px 20px;
             }
 
             .result-score {
                 font-size: 3rem;
+            }
+
+            .sahinh-content-layout {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .sahinh-list-sidebar {
+                max-height: 250px;
+            }
+
+            .sahinh-tabs {
+                overflow-x: auto;
+                white-space: nowrap;
+                display: flex;
+                flex-wrap: nowrap;
+                -webkit-overflow-scrolling: touch;
+                padding-bottom: 5px;
+                gap: 8px;
+            }
+
+            .sahinh-tab {
+                flex: 0 0 auto;
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .signs-container {
+                padding: 30px 20px;
+            }
+
+            .tips-container {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .card {
+                border-radius: 16px;
+            }
+
+            .header {
+                padding: 30px 0 15px;
+            }
+
+            .app-logo {
+                width: 90px;
+                height: 90px;
+            }
+
+            .header h1 {
+                font-size: 1.4rem;
+                letter-spacing: 0.5px;
+            }
+
+            .header p {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+            }
+
+            .live-badge {
+                padding: 6px 16px;
+                font-size: 0.75rem;
+            }
+
+            .dashboard-container {
+                padding: 15px 12px;
+            }
+
+            .dashboard-title {
+                font-size: 1.15rem;
+                letter-spacing: 0;
+                margin-bottom: 6px;
+            }
+
+            .dashboard-subtitle {
+                font-size: 0.8rem;
+                margin-bottom: 16px;
+            }
+
+            .license-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .license-card {
+                padding: 16px 14px;
+                border-radius: 14px;
+                min-height: auto !important;
+                flex-direction: row;
+                text-align: left;
+                align-items: center;
+                gap: 14px;
+                justify-content: flex-start;
+            }
+
+            .license-icon {
+                width: 52px;
+                height: 52px;
+                font-size: 1.8rem;
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+
+            .license-card-body {
+                flex: 1;
+                min-width: 0;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .license-name {
+                font-size: 1rem;
+                margin-bottom: 3px;
+            }
+
+            .license-desc {
+                font-size: 0.78rem;
+                margin-bottom: 8px;
+                line-height: 1.4;
+            }
+
+            .license-card .btn {
+                padding: 8px 16px !important;
+                font-size: 0.8rem !important;
+                height: 36px;
+                width: auto !important;
+                margin-top: 0;
+            }
+
+            .license-badge {
+                top: 10px;
+                right: 10px;
+                padding: 3px 8px;
+                font-size: 0.65rem;
+            }
+
+            .hub-container {
+                padding: 20px 12px;
+            }
+
+            .hub-title {
+                font-size: 1.5rem;
+            }
+
+            .hub-subtitle {
+                font-size: 0.85rem;
+                margin-bottom: 20px;
+            }
+
+            .progress-section {
+                padding: 15px 12px;
+                border-radius: 12px;
+            }
+
+            .progress-title-text {
+                font-size: 0.95rem;
+            }
+
+            .btn-wrong-practice {
+                font-size: 0.8rem;
+                padding: 6px 12px;
+            }
+
+            .progress-stat-item {
+                font-size: 0.8rem;
+            }
+
+            .hub-card {
+                padding: 20px 15px;
+                border-radius: 16px;
+            }
+
+            .hub-card-title {
+                font-size: 1.15rem;
+            }
+
+            .hub-card-desc {
+                font-size: 0.85rem;
+                margin-bottom: 15px;
+            }
+
+            .exam-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .exam-btn {
+                padding: 10px 5px;
+                font-size: 0.8rem;
+                border-radius: 10px;
+            }
+
+            .topic-btn {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+                border-radius: 10px;
+            }
+
+            .topic-btn .count-badge {
+                padding: 1px 8px;
+                font-size: 0.75rem;
+            }
+
+            .quiz-header {
+                padding: 10px 15px;
+            }
+
+            .question-section {
+                padding: 15px 12px;
+            }
+
+            .question-category {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+                margin-bottom: 15px;
+            }
+
+            .question-text {
+                font-size: 1rem;
+                margin-bottom: 15px;
+            }
+
+            .question-image {
+                max-width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+            }
+
+            .options {
+                gap: 8px;
+            }
+
+            .option {
+                padding: 12px 14px;
+                border-radius: 10px;
+                border-width: 2px;
+            }
+
+            .option:hover:not(.disabled) {
+                transform: none;
+            }
+
+            .option-letter {
+                width: 32px;
+                height: 32px;
+                border-radius: 8px;
+                font-size: 0.85rem;
+                margin-right: 10px;
+            }
+
+            .option-text {
+                font-size: 0.85rem;
+            }
+
+            .explanation {
+                padding: 12px;
+                border-radius: 10px;
+            }
+
+            .explanation h4 {
+                font-size: 0.9rem;
+            }
+
+            .explanation p {
+                font-size: 0.8rem;
+            }
+
+            .quiz-footer {
+                padding: 12px 15px;
+            }
+
+            .nav-btn {
+                padding: 10px 16px;
+                font-size: 0.8rem;
+                border-radius: 20px;
+            }
+
+            .result-screen h2 {
+                font-size: 1.8rem;
+            }
+
+            .result-score {
+                font-size: 2.5rem;
+            }
+
+            .result-percent {
+                font-size: 1.1rem;
+            }
+
+            .result-stats .stat-box {
+                padding: 15px;
+            }
+
+            .result-stats .stat-box .number {
+                font-size: 1.6rem;
+            }
+
+            .result-stats .stat-box .label {
+                font-size: 0.8rem;
+            }
+
+            .sahinh-detail-panel {
+                padding: 15px;
+            }
+
+            .lesson-detail-title {
+                font-size: 1.15rem;
+            }
+
+            .lesson-detail-desc {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
+
+            .detail-section {
+                padding: 12px;
+            }
+
+            .detail-section .section-title {
+                font-size: 0.85rem;
+            }
+
+            .detail-section .section-body {
+                font-size: 0.8rem;
+            }
+
+            .quiz-opt-btn {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+
+            .signs-container {
+                padding: 20px 12px;
+            }
+
+            .signs-search-box {
+                margin-bottom: 20px;
+            }
+
+            .signs-search-input {
+                padding: 10px 18px;
+                font-size: 0.9rem;
+            }
+
+            .signs-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .sign-card {
+                padding: 12px 8px;
+                border-radius: 12px;
+            }
+
+            .sign-card:hover {
+                transform: translateY(-4px);
+            }
+
+            .sign-card-image {
+                height: 80px;
+                margin-bottom: 8px;
+            }
+
+            .sign-card-code {
+                padding: 2px 8px;
+                font-size: 0.7rem;
+                margin-bottom: 6px;
+            }
+
+            .sign-card-title {
+                font-size: 0.85rem;
+                margin-bottom: 4px;
+            }
+
+            .sign-card-desc {
+                font-size: 0.75rem;
+                text-align: center;
+            }
+
+            .tips-container {
+                padding: 20px 12px;
+            }
+
+            .tips-tabs {
+                gap: 6px;
+                margin-bottom: 15px;
+            }
+
+            .tips-tab {
+                padding: 6px 14px;
+                font-size: 0.8rem;
+            }
+
+            .tip-card {
+                padding: 15px;
+                border-radius: 12px;
+                margin-bottom: 12px;
+            }
+
+            .tip-card-title {
+                font-size: 0.95rem;
+                margin-bottom: 10px;
+                padding-bottom: 6px;
+            }
+
+            .tip-card-item {
+                font-size: 0.8rem;
+                margin-bottom: 6px;
+                gap: 6px;
+            }
+
+            .tip-card-item i {
+                margin-top: 3px;
+                font-size: 0.85rem;
+            }
+
+            .bio-page-container {
+                padding: 20px 10px !important;
+            }
+
+            .bio-profile-card {
+                padding: 25px 15px !important;
+                border-radius: 16px !important;
+            }
+
+            .bio-avatar {
+                width: 80px !important;
+                height: 80px !important;
+            }
+
+            .bio-profile-card h2 {
+                font-size: 1.4rem !important;
+            }
+
+            .bio-profile-card p {
+                font-size: 0.85rem !important;
+            }
+
+            .bio-link-item {
+                padding: 12px 15px !important;
+                border-radius: 12px !important;
+                font-size: 0.9rem !important;
+                gap: 10px !important;
+            }
+
+            .bio-link-item i {
+                font-size: 1.2rem !important;
+                width: 20px !important;
             }
         }
 
@@ -1101,6 +1645,15 @@
             margin-bottom: 25px;
             transition: all 0.3s ease;
             box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
+        }
+
+        /* Body wrapper inside license card — stacks vertically on desktop */
+        .license-card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            flex: 1;
         }
 
         .license-card:hover .license-icon {
@@ -3204,16 +3757,20 @@
                         <div class="license-card" onclick="navigateTo('CLASS_A_HOME')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🏍️</div>
-                            <div class="license-name">Hạng A (Xe máy)</div>
-                            <div class="license-desc">Các loại xe mô tô hai bánh và ba bánh (A1, A2, A3...)</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Vào Ôn Luyện</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng A (Xe máy)</div>
+                                <div class="license-desc">Các loại xe mô tô hai bánh và ba bánh (A1, A2, A3...)</div>
+                                <button class="btn btn-primary">Vào Ôn Luyện</button>
+                            </div>
                         </div>
                         <div class="license-card" onclick="navigateTo('CLASS_B_HOME')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🚗</div>
-                            <div class="license-name">Hạng B (Ô tô)</div>
-                            <div class="license-desc">Các loại xe ô tô chở người, ô tô tải chở hàng (B1, B2...)</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Vào Ôn Luyện</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng B (Ô tô)</div>
+                                <div class="license-desc">Các loại xe ô tô chở người, ô tô tải chở hàng (B1, B2...)</div>
+                                <button class="btn btn-primary">Vào Ôn Luyện</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -3234,28 +3791,35 @@
                         <div class="license-card" onclick="currentClass = 'A1'; navigateTo('LEARNING_HUB')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🛵</div>
-                            <div class="license-name">Hạng A1</div>
-                            <div class="license-desc">Mô tô hai bánh có dung tích xi lanh từ 50cm3 đến dưới 175cm3</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng A1</div>
+                                <div class="license-desc">Mô tô hai bánh có dung tích xi lanh từ 50cm3 đến dưới 175cm3</div>
+                                <button class="btn btn-primary">Chọn Ôn Thi</button>
+                            </div>
                         </div>
                         <div class="license-card" onclick="currentClass = 'A2'; navigateTo('LEARNING_HUB')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🏍️</div>
-                            <div class="license-name">Hạng A2</div>
-                            <div class="license-desc">Mô tô hai bánh có dung tích xi lanh từ 175cm3 trở lên (Xe phân khối lớn)</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng A2</div>
+                                <div class="license-desc">Mô tô hai bánh có dung tích xi lanh từ 175cm3 trở lên (Xe phân khối lớn)</div>
+                                <button class="btn btn-primary">Chọn Ôn Thi</button>
+                            </div>
                         </div>
                         <div class="license-card" onclick="currentClass = 'A3'; navigateTo('LEARNING_HUB')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🛺</div>
-                            <div class="license-name">Hạng A3</div>
-                            <div class="license-desc">Xe mô tô ba bánh, xe lam, xích lô máy và các loại xe tương tự</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng A3</div>
+                                <div class="license-desc">Xe mô tô ba bánh, xe lam, xích lô máy và các loại xe tương tự</div>
+                                <button class="btn btn-primary">Chọn Ôn Thi</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             `;
         }
+
         function renderClassBHome() {
             const app = document.getElementById('app');
             app.innerHTML = `
@@ -3271,60 +3835,29 @@
                         <div class="license-card" onclick="currentClass = 'B1'; navigateTo('LEARNING_HUB')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🚗</div>
-                            <div class="license-name">Hạng B1</div>
-                            <div class="license-desc">Ô tô số tự động chở người đến 9 chỗ; tải số tự động dưới 3.500 kg</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng B1</div>
+                                <div class="license-desc">Ô tô số tự động chở người đến 9 chỗ; tải số tự động dưới 3.500 kg</div>
+                                <button class="btn btn-primary">Chọn Ôn Thi</button>
+                            </div>
                         </div>
                         <div class="license-card" onclick="currentClass = 'B2'; navigateTo('LEARNING_HUB')">
                             <span class="license-badge active">Sẵn sàng</span>
                             <div class="license-icon">🚘</div>
-                            <div class="license-name">Hạng B2</div>
-                            <div class="license-desc">Ô tô số sàn chở người đến 9 chỗ; xe tải số sàn dưới 3.500 kg</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng B2</div>
+                                <div class="license-desc">Ô tô số sàn chở người đến 9 chỗ; xe tải số sàn dưới 3.500 kg</div>
+                                <button class="btn btn-primary">Chọn Ôn Thi</button>
+                            </div>
                         </div>
                         <div class="license-card locked">
                             <span class="license-badge locked">Đang cập nhật</span>
                             <div class="license-icon">🚛</div>
-                            <div class="license-name">Hạng C</div>
-                            <div class="license-desc">Xe ô tô tải chở hàng có trọng tải từ 3.500 kg trở lên</div>
-                            <button class="btn btn-secondary" style="margin-top: auto; width: 100%; cursor: not-allowed;" disabled>Sắp ra mắt</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-        function renderClassBHome() {
-            const app = document.getElementById('app');
-            app.innerHTML = `
-                <div class="dashboard-container">
-                    <div class="back-btn-container">
-                        <button class="back-btn" onclick="navigateTo('MAIN_HOME')">
-                            <i class="fas fa-arrow-left"></i> Quay lại trang chủ
-                        </button>
-                    </div>
-                    <h2 class="dashboard-title">Luyện Thi Bằng Lái Hạng B</h2>
-                    <p class="dashboard-subtitle">Chọn phân hạng xe cụ thể để tiến hành ôn luyện</p>
-                    <div class="license-grid">
-                        <div class="license-card" onclick="currentClass = 'B1'; navigateTo('LEARNING_HUB')">
-                            <span class="license-badge active">Sẵn sàng</span>
-                            <div class="license-icon">🚗</div>
-                            <div class="license-name">Hạng B1</div>
-                            <div class="license-desc">Ô tô số tự động chở người đến 9 chỗ; tải số tự động dưới 3.500 kg</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
-                        </div>
-                        <div class="license-card" onclick="currentClass = 'B2'; navigateTo('LEARNING_HUB')">
-                            <span class="license-badge active">Sẵn sàng</span>
-                            <div class="license-icon">🚘</div>
-                            <div class="license-name">Hạng B2</div>
-                            <div class="license-desc">Ô tô số sàn chở người đến 9 chỗ; xe tải số sàn dưới 3.500 kg</div>
-                            <button class="btn btn-primary" style="margin-top: auto; width: 100%;">Chọn Ôn Thi</button>
-                        </div>
-                        <div class="license-card locked">
-                            <span class="license-badge locked">Đang cập nhật</span>
-                            <div class="license-icon">🚛</div>
-                            <div class="license-name">Hạng C</div>
-                            <div class="license-desc">Xe ô tô tải chở hàng có trọng tải từ 3.500 kg trở lên</div>
-                            <button class="btn btn-secondary" style="margin-top: auto; width: 100%; cursor: not-allowed;" disabled>Sắp ra mắt</button>
+                            <div class="license-card-body">
+                                <div class="license-name">Hạng C</div>
+                                <div class="license-desc">Xe ô tô tải chở hàng có trọng tải từ 3.500 kg trở lên</div>
+                                <button class="btn btn-secondary" style="cursor: not-allowed;" disabled>Sắp ra mắt</button>
+                            </div>
                         </div>
                     </div>
                 </div>
